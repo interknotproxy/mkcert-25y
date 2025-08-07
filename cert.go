@@ -337,7 +337,7 @@ func (m *mkcert) newCA() {
 		},
 		SubjectKeyId: skid[:],
 
-		NotAfter:  time.Now().AddDate(10, 0, 0),
+		NotAfter:  time.Now().AddDate(25, 0, 0),
 		NotBefore: time.Now(),
 
 		KeyUsage: x509.KeyUsageCertSign,
