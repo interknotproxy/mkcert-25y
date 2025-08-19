@@ -32,18 +32,17 @@ import (
 	pkcs12 "software.sslmate.com/src/go-pkcs12"
 )
 
-var userAndHostname string
 
 func init() {
 	u, err := user.Current()
 	if err == nil {
-		userAndHostname = u.Username + "@"
+		//userAndHostname = u.Username + "@"
 	}
 	if h, err := os.Hostname(); err == nil {
-		userAndHostname += h
+		//userAndHostname += h
 	}
 	if err == nil && u.Name != "" && u.Name != u.Username {
-		userAndHostname += " (" + u.Name + ")"
+		//userAndHostname += " (" + u.Name + ")"
 	}
 }
 
